@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Categories from './components/Categories';
+import Navbar from './components/Navbar';
 import Choose from './components/Choose';
 import Home from './components/Home';
+import Categories from './components/Categories';
 import MostSold from './components/MostSold';
-import Navbar from './components/Navbar';
 import Products from './components/Products';
 import Promo from './components/Promo';
 import Recommend from './components/Recommend';
@@ -13,11 +13,11 @@ import "./scss/index.scss";
 export default function App() {
   const [theme, setTheme] = useState("dark");
   return <div className="app" data-theme={theme}>
-    <Categories />
+    <Navbar />
     <Choose />
     <Home />
+    <Categories />
     <MostSold />
-    <Navbar />
     <Products />
     <Promo />
     <Recommend />
