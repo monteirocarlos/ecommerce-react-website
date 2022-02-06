@@ -93,4 +93,105 @@ ul {
     margin: 0 5rem;
   }
 }
+
+nav {
+  background-color: var(--blue_backgrund);
+  -webkit-transform: var(--transition);
+          transform: var(--transition);
+}
+
+nav .py-3 {
+  padding: 2rem 0;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.3rem;
+}
+
+nav .container .brand span {
+  color: var(--dark-blue);
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+nav .container .brand .dot {
+  color: var(--ocean-blue);
+}
+
+nav .container .links-container .toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: relative;
+  z-index: 1;
+}
+
+nav .container .links-container .toggle svg {
+  color: var(--svg-color);
+}
+
+nav .container .links-container .links {
+  width: 0vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background-color: var(--background);
+  visibility: hidden;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  opacity: 0;
+}
+
+nav .container .links-container .links ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+nav .container .links-container .links ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+nav .container .links-container .responsive-toggle {
+  width: 60vw;
+  visibility: visible;
+  opacity: 1;
+}
 /*# sourceMappingURL=index.css.map */
